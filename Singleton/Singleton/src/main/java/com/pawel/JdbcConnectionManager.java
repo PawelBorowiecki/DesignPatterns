@@ -9,7 +9,7 @@ public class JdbcConnectionManager {
     private String url;
 
     private JdbcConnectionManager(){
-        url = "jdbc:postgresql://ep-billowing-term-a2yl0hr2.eu-central-1.aws.neon.tech/rentingdb?user=rentingdb_owner&password=npg_pBgqX47feahG&sslmode=require";
+        url = DB_URL;
     }
 
     public static JdbcConnectionManager getInstance(){
@@ -27,3 +27,4 @@ public class JdbcConnectionManager {
         }
     }
 }
+
